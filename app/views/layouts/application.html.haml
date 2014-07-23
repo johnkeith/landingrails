@@ -9,8 +9,8 @@
     = csrf_meta_tags
   %body
     .container
-      - if notice || alert
-        = render 'partials/flashes'
+      #flash_messages
+        = render 'partials/flashes' unless flash.empty?
       %ul
         = render 'devise/menu/login_items'
         = render 'devise/menu/registration_items'
