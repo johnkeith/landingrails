@@ -11,4 +11,7 @@
     .container
       - if notice || alert
         = render 'partials/flashes'
+      %ul
+        = render 'devise/menu/login_items'
+        = render 'devise/menu/registration_items'
       = yield
