@@ -8,10 +8,8 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container
+    .container.container-layout
       #flash_messages
-        = render 'partials/flashes' unless flash.empty?
-      %ul
-        = render 'devise/menu/login_items'
-        = render 'devise/menu/registration_items'
+        = render "partials/flashes"
+      = render "partials/navbar"
       = yield

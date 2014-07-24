@@ -1,0 +1,13 @@
+.container-layout {
+  margin-top:50px;
+}
+.navbar-default {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #f2f2f2;
+  border-width: 0 0 2px;
+}
+#flash_messages {
+  position: absolute;
+  top:0;
+  z-index:-1000;
+}
