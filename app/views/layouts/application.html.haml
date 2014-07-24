@@ -9,7 +9,7 @@
     = csrf_meta_tags
   %body
     .container.container-layout
+      = render "partials/navbar"
       #flash_messages
         = render "partials/flashes"
-      = render "partials/navbar"
       = yield
